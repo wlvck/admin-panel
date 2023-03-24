@@ -12,7 +12,7 @@ const vuetify = createVuetify({
     components,
     directives,
 })
-import('@/style/main.scss')
+import('@/assets/scss/index.scss')
 const app = createApp(App);
 const store = createPinia();
 app.use(vuetify).use(store).use(router).mount('#app')
