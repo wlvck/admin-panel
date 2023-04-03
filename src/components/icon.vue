@@ -5,6 +5,7 @@
 <script>
 import NavbarLogo from "@/components/icons/NavbarLogo.vue";
 import Account from "@/components/icons/Account.vue";
+import Search from "@/components/icons/Search.vue";
 
 export default {
   name: 'icon',
@@ -14,6 +15,7 @@ export default {
   components: {
     Account,
     NavbarLogo,
+    Search,
   }
 }
 </script>
