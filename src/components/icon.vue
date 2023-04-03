@@ -6,6 +6,8 @@
 import NavbarLogo from "@/components/icons/NavbarLogo.vue";
 import Account from "@/components/icons/Account.vue";
 import Search from "@/components/icons/Search.vue";
+import Eye from "@/components/icons/Eye.vue";
+import Trash from "@/components/icons/Trash.vue";
 
 export default {
   name: 'icon',
@@ -14,6 +16,8 @@ export default {
   },
   components: {
     Account,
+    Eye,
+    Trash,
     NavbarLogo,
     Search,
   }
