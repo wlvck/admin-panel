@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar/>
+    <navbar v-if="$route.meta.type !== 'auth'"/>
     <router-view/>
   </div>
 </template>

@@ -33,4 +33,20 @@ export const routes = [
         name: 'promoCode',
         component: () => import("@/pages/promoCode.vue")
     },
+    {
+        path: '/auth',
+        name: 'auth',
+        component: () => import("@/pages/auth/auth.vue"),
+        meta: {
+            type: 'auth'
+        }
+    },
+    {
+        path: '/restore-password',
+        name: 'restorePassword',
+        component: () => import("@/pages/auth/restorePassword.vue"),
+        meta: {
+            type: 'auth'
+        }
+    },
 ];

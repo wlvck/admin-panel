@@ -138,3 +138,87 @@
     }
   }
 }
+
+.auth-container {
+  position: relative;
+  max-width: max-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin: 70px auto;
+  }
+
+  .v-form {
+    width: 457px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 24px;
+    padding: 32px;
+
+    h2 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center;
+      color: #111111;
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      text-decoration: none;
+      color: #00A0E3;
+    }
+
+    .v-btn {
+      max-width: 160px;
+      padding: 16px;
+      margin: 0 auto;
+      text-transform: none;
+
+      &__content {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+      }
+    }
+
+    .form-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 8px;
+        color: #000000;
+      }
+
+      input {;
+        border: 1px solid #EBEBEB;
+        border-radius: 12px;
+        padding: 15px;
+        transition: 0.4s;
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        outline: none;
+        &::placeholder{
+          opacity: 0.4;
+        }
+        &:focus {
+          border: 1px solid #00A0E3 !important;
+        }
+      }
+    }
+  }
+}
