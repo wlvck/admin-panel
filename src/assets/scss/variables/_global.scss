@@ -168,7 +168,13 @@
       text-align: center;
       color: #111111;
     }
+    p{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 160%;
+      color: #555555;
 
+    }
     a {
       font-weight: 700;
       font-size: 14px;
@@ -227,5 +233,28 @@
         }
       }
     }
+  }
+
+  .resend-sms {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #111111;
+    opacity: 0.8;
+  }
+
+  .otp-input {
+    width: 70.25px;
+    height: 50px;
+    display: flex;
+    margin-right: 16px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 14px;
   }
 }

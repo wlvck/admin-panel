@@ -1,10 +1,16 @@
 <template>
-  <div>
-    <navbar v-if="$route.meta.type !== 'auth'"/>
+  <component :is="$route.meta.layout">
     <router-view/>
-  </div>
+  </component>
 </template>
 
-<script setup>
-import Navbar from "@/components/Navbar.vue";
+<script>
+import auth from "@/layout/auth.vue";
+import app from "@/layout/app.vue";
+export default {
+  components: {
+    auth,
+    app
+  }
+}
 </script>
