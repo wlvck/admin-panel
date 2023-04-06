@@ -6,11 +6,17 @@
         <h2 class="mb-8">Вход</h2>
         <div class="form-block mb-4">
           <label for="phone">Телефон</label>
-          <input placeholder="+7(700) 000 00 00" type="text" id="phone">
+          <div class="form-block-input">
+            <input placeholder="+7(700) 000 00 00" type="text" id="phone">
+          </div>
         </div>
         <div class="form-block">
           <label for="password">Пароль</label>
-          <input placeholder="Пароль" type="password" id="password">
+          <div class="form-block-input">
+            <input placeholder="Пароль" :type="showPassword ? 'text' : 'password'" id="password">
+            <icon :icon-name="`${showPassword ? 'show-password' : 'hide-password'}`" class="pointer"
+                  @click="showPassword = !showPassword"/>
+          </div>
         </div>
         <router-link :to="{name: 'restorePassword'}" class="d-block mb-8 mt-1 text-end">Забыли пароль?</router-link>
         <div class="d-flex align-center">
@@ -23,6 +29,7 @@
 
 <script setup>
 import {ref} from "vue";
+import Icon from "@/components/icon.vue";
 
 const showPassword = ref(false)
 </script>

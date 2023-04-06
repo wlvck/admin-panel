@@ -49,4 +49,12 @@ export const routes = [
             type: 'auth'
         }
     },
+    {
+        path: '/send-otp',
+        name: 'sendOtp',
+        component: () => import("@/pages/auth/sendOtp.vue"),
+        meta: {
+            type: 'auth'
+        }
+    },
 ];
