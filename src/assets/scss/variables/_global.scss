@@ -168,13 +168,15 @@
       text-align: center;
       color: #111111;
     }
-    p{
+
+    p {
       font-weight: 600;
       font-size: 14px;
       line-height: 160%;
       color: #555555;
 
     }
+
     a {
       font-weight: 700;
       font-size: 14px;
@@ -256,5 +258,48 @@
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     border-radius: 14px;
+  }
+}
+
+.services {
+  .block {
+    padding: 24px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 16px;
+
+    h4 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      color: #555555;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      color: #000000;
+    }
+
+    .status {
+      padding: 4px 9px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .green {
+      background: rgba(25, 189, 61, 0.1);
+      color: #19BD3D;
+    }
+
+    .red {
+      background: rgba(227, 30, 36, 0.1);
+      color: #E31E24;
+    }
   }
 }
