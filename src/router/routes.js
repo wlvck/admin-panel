@@ -20,6 +20,14 @@ export const routes = [
         }
     },
     {
+        path: '/users/:id',
+        name: 'userDetail',
+        component: () => import("@/pages/userDetail.vue"),
+        meta: {
+            layout: 'app'
+        }
+    },
+    {
         path: '/rates',
         name: 'rates',
         component: () => import("@/pages/rates.vue"),
@@ -31,6 +39,14 @@ export const routes = [
         path: '/storerooms',
         name: 'storerooms',
         component: () => import("@/pages/storerooms.vue"),
+        meta: {
+            layout: 'app'
+        }
+    },
+    {
+        path: '/storerooms/:id',
+        name: 'storeroomDetail',
+        component: () => import("@/pages/storeroomDetail.vue"),
         meta: {
             layout: 'app'
         }
