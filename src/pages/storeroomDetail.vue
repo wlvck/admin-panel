@@ -1,15 +1,9 @@
 <template>
   <div class="page">
-    <div class="d-flex align-center justify-space-between">
-      <div class="d-flex align-center">
-        <icon icon-name="arrow-left" class="mr-2 pointer" @click.prevent="$router.push({name: 'storerooms'})"/>
-        <div class="page-title">
-          Кладовка №5678
-        </div>
-      </div>
-      <div class="page-input d-flex align-center">
-        <icon class="mr-4" icon-name="search"/>
-        <input type="text" placeholder="Поиск" class="flex-shrink-1 flex-grow-1">
+    <div class="d-flex align-center">
+      <icon icon-name="arrow-left" class="mr-2 pointer" @click.prevent="$router.push({name: 'storerooms'})"/>
+      <div class="page-title">
+        Кладовка №5678
       </div>
     </div>
     <v-table class="mt-6">
@@ -46,12 +40,6 @@
       </tr>
       </tbody>
     </v-table>
-    <div class="d-flex align-end justify-end mt-4">
-      <v-pagination
-          :length="15"
-          :total-visible="7"
-      ></v-pagination>
-    </div>
   </div>
 </template>
 

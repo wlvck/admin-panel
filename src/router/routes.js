@@ -68,9 +68,25 @@ export const routes = [
         }
     },
     {
+        path: '/create-story',
+        name: 'createStory',
+        component: () => import("@/pages/createStory.vue"),
+        meta: {
+            layout: 'app'
+        }
+    },
+    {
         path: '/promo-code',
         name: 'promoCode',
         component: () => import("@/pages/promoCode.vue"),
+        meta: {
+            layout: 'app'
+        }
+    },
+    {
+        path: '/promo-code/:id',
+        name: 'promoCodeDetail',
+        component: () => import("@/pages/promoCodeDetail.vue"),
         meta: {
             layout: 'app'
         }

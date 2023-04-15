@@ -355,3 +355,48 @@
     }
   }
 }
+
+.v-tab--selected .v-tab__slider {
+  display: none;
+}
+
+.v-tabs {
+  width: 270px;
+  height: 55px;
+}
+
+.conditions {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #777777;
+}
+
+.v-slide-group__content {
+  background: #EEEEEE;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .v-btn {
+    border-radius: 16px !important;
+    overflow: hidden;
+
+    &__content {
+      color: #777777;
+    }
+  }
+
+  .v-tab--selected {
+    background: #00A0E3;
+    overflow: hidden;
+    border: 1px solid #00A0E3;
+
+    .v-btn__content {
+      color: white;
+    }
+  }
+}
