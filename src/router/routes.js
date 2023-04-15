@@ -1,7 +1,7 @@
 export const routes = [
     {
         path: '/',
-        redirect: {name: 'users'}
+        redirect: {name: 'statistics'}
     },
     {
         path: '/statistics',
