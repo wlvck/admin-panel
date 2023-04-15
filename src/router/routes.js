@@ -36,6 +36,14 @@ export const routes = [
         }
     },
     {
+        path: '/rates/:id',
+        name: 'rateDetail',
+        component: () => import("@/pages/rateDetail.vue"),
+        meta: {
+            layout: 'app'
+        }
+    },
+    {
         path: '/storerooms',
         name: 'storerooms',
         component: () => import("@/pages/storerooms.vue"),

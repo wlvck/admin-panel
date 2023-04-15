@@ -55,7 +55,7 @@
     border: 1px solid #EEEEEE;
     border-radius: 16px;
     width: 340px;
-    padding: 22px 16px;
+    padding: 15px;
 
     input {
       font-weight: 600;
@@ -303,11 +303,55 @@
     }
   }
 }
-.status-red{
+
+.status-red {
   background: #E31E24;
   border-radius: 8px;
 }
-.status-blue{
+
+.status-blue {
   background: #00A0E3;
   border-radius: 8px;
+}
+
+.basic-border {
+  border: 1px solid #DADADA;
+  border-radius: 16px;
+}
+
+.grid {
+  &-container {
+    margin-top: 50px;
+  }
+
+  &-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+  }
+
+  &-input {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    input {
+      color: #000000;
+      max-width: 150px;
+      width: 100%;
+    }
+
+    span {
+      color: #777777;
+    }
+  }
 }
