@@ -33,6 +33,7 @@
       <tr
           v-for="item in 10"
           :key="item"
+          class="pointer" @click.prevent="$router.push({name: 'rateDetail', params: {id: 1}})"
       >
         <td>Большая</td>
         <td>200 тг.</td>

@@ -11,7 +11,7 @@
     </div>
     <v-table class="mt-6">
       <thead>
-      <tr>
+      <tr class="pointer" @click.prevent="$router.push({name: 'storeroomDetail', params: {id: 1}})">
         <th class="text-left">
           Статус
         </th>
@@ -27,6 +27,7 @@
       <tr
           v-for="item in 3"
           :key="item"
+          class="pointer" @click.prevent="$router.push({name: 'storeroomDetail', params: {id: 1}})"
       >
         <td>
           <v-btn elevation="0" class="status-btn blue">Свободно</v-btn>

@@ -11,7 +11,7 @@
     </div>
     <v-table class="mt-6">
       <thead>
-      <tr>
+      <tr class="pointer" @click.prevent="$router.push({name: 'userDetail', params: {id: 1}})">
         <th class="text-left">
           ФИО
         </th>
@@ -27,6 +27,7 @@
       <tr
           v-for="item in 10"
           :key="item"
+          class="pointer" @click.prevent="$router.push({name: 'userDetail', params: {id: 1}})"
       >
         <td>Иванов Иван Иванович</td>
         <td>Номер телефона</td>
